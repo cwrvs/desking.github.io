@@ -2,7 +2,7 @@ function calculatePayment() {
   // Get the values from the form, with fallbacks to 0 if the input is empty
   var salesPrice = parseFloat(document.getElementById('salesPrice').value) || 0;
   var downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
-  var taxRate = (parseFloat(document.getElementById('taxRate').value) || 0) / 100;
+  var taxRates = (parseFloat(document.getElementById('taxRate').value) || 0) / 100;
   var licenseFee = parseFloat(document.getElementById('licenseFee').value) || 0;
   var docFee = parseFloat(document.getElementById('docFee').value) || 0;
   
