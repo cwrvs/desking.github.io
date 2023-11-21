@@ -1,0 +1,33 @@
+<form id="paymentCalculator">
+  <div class="input-group">
+    <label for="salesPrice">Sales Price ($):</label>
+    <input type="number" id="salesPrice" name="salesPrice" placeholder="Enter sales price" min="0" required>
+  </div>
+
+  <div class="input-group">
+    <label for="downPayment">Down Payment ($):</label>
+    <input type="number" id="downPayment" name="downPayment" placeholder="Enter down payment" min="0">
+  </div>
+
+  <div class="input-group">
+    <label for="taxRate">Tax Rate (%):</label>
+    <input type="number" id="taxRate" name="taxRate" placeholder="Enter tax rate" step="0.01" min="0">
+  </div>
+
+  <div class="input-group">
+    <label for="licenseFee">License Fee ($):</label>
+    <input type="number" id="licenseFee" name="licenseFee" placeholder="Enter license fee" min="0">
+  </div>
+
+  <div class="input-group">
+    <label for="docFee">Documentation Fee ($):</label>
+    <input type="number" id="docFee" name="docFee" placeholder="Enter documentation fee" min="0">
+  </div>
+
+  <button type="button" onclick="calculatePayment()">Calculate</button>
+</form>
+
+<div id="results">
+  <p id="monthlyPayment">Monthly Payment: <span>$0.00</span></p>
+  <p id="totalCost">Total Cost: <span>$0.00</span></p>
+</div>
