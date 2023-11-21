@@ -1,3 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RV Payment Calculator</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #results {
+    margin-top: 20px;
+  }
+
+  #results p {
+    font-weight: bold;
+  }
+
+  #results span {
+    font-weight: normal;
+  }
+</style>
+</head>
+<body>
+
 <form id="paymentCalculator">
   <div class="input-group">
     <label for="salesPrice">Sales Price ($):</label>
@@ -31,3 +81,7 @@
   <p id="monthlyPayment">Monthly Payment: <span>$0.00</span></p>
   <p id="totalCost">Total Cost: <span>$0.00</span></p>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
